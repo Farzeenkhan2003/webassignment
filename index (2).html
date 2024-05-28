@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        #education ul, #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #education li, #skills li {
+            padding: 5px 0;
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            padding: 10px;
+            border: none;
+            background: #333;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        form button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Muhammad Farzeen Khan</h1>
+            <h2>Business Analyst</h2>
+            <p>Title Line: A Data Analytics enthusiast to transform raw data into actionable insights for informed decision-making and
+driving impactful business outcomes.
+</p>
+        </div>
+    </header>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Matric: Beaconhouse School System</li>
+            <li>Intermediate: Punjab Group of Colleges</li>
+            <li>BS: University of Management and Technology </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Data analysis</li>
+            <li>Power BI</li>
+            <li>My SQL</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Business Analyst Intern</h3>
+            <p>Ilsa Interactive | 2024</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Complete Projects</h2>
+        <div class="project-item">
+            <h3>Choco-Bar Company Sales Data</h3>
+            <p>Led a comprehensive data analysis initiative for a chocolate company, overseeing meticulous data cleansing and organization to extract invaluable insights. Engineered precise calculations for total sales and segmented data by country, enabling strategic decision-making and targeted market expansion. Identified and ranked top-selling products and evaluated salesperson performance with advanced analytical techniques. Developed visually captivating dashboards in Excel, revolutionizing data-driven decision-making processes. The analysis resulted in a revenue boost of around 15-20% for the business.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Form</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
